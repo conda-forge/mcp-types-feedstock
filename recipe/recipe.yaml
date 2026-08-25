@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.0.0"
+  version: "2.1.0"
 
 package:
   name: mcp-types
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mcp-types/mcp_types-${{ version }}.tar.gz
-  sha256: d7d939b9285c9961ae8866ba75ef85da34d12bafe276efbf4eb6a131786d8379
+  sha256: 16f91064ce33d7ee7a75a7e198a437172215180c16d4bbcfa0e61488ede92c54
 
 build:
   number: 0
@@ -32,7 +32,7 @@ tests:
       imports:
         - mcp_types
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - "*"
 
